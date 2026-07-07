@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#000000',
+    backgroundColor: '#0B1220',
   },
   logo: {
     width: moderateScale(100),
@@ -25,3 +25,4 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
 });
+
