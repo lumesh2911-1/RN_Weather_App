@@ -1,18 +1,22 @@
-import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
+import { StatusBar, View } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import RootNavigationScreen from './src/navigation/RootNavigationScreen';
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 const App = () => {
   return (
     <SafeAreaProvider>
-      <SafeAreaView style={{flex: 1}}>
+      <StatusBar
+        translucent
+        backgroundColor="transparent"
+        barStyle="light-content"
+      />
+
+      <View style={{ flex: 1 }}>
         <RootNavigationScreen />
-      </SafeAreaView>
+      </View>
     </SafeAreaProvider>
   );
 };
 
 export default App;
-
-const styles = StyleSheet.create({});
